@@ -44,6 +44,7 @@ export const Auth = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
+          <div className="gap-20" />
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Κωδικός πρόσβασης</Form.Label>
             <Form.Control
