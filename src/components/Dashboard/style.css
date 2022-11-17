@@ -2,15 +2,25 @@
   display: flex;
 }
 
-.main-area {
-  width: 75%;
+.content-area {
   padding: 10px;
 }
 
+.main-area {
+  width: 83%;
+}
+
 .sidebar {
-  width: 25%;
+  width: 17%;
   height: 100vh;
   top: 0;
   position: sticky;
   border-right: 2px solid lightgrey;
+}
+
+.topbar {
+  height: 10vh;
+  padding: 15px;
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
 }

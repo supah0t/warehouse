@@ -30,11 +30,7 @@ export const Auth = () => {
   return (
     <div className="auth-container">
       <div className="image-area">
-        <img
-          style={{ height: '100%', width: '100%' }}
-          src={Image}
-          alt="Login image"
-        />
+        <img className="login-image" src={Image} alt="Login image" />
       </div>
       <div className="form-area">
         <h2 className="form-header">ΣΥΝΔΕΣΗ</h2>

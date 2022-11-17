@@ -9,6 +9,7 @@
   display: grid;
   align-items: center;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .menu-header {
@@ -35,7 +36,6 @@ svg {
 }
 
 .logo {
-  margin-top: 25px;
   padding: 15px;
   font-weight: bold;
   display: flex;

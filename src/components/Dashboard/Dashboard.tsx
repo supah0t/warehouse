@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from '../../hooks/hooks';
 
 import { Sidebar } from '../Sidebar/Sidebar';
+import { Topbar } from '../Topbar/Topbar';
 
 import './style.css';
 
 export const Dashboard = () => {
   //state variable would be used to conditionally
-  //render appropriate component in the main-area
+  //render appropriate component in the content-area
   const [sidebarItem, setSidebarItem] = useState('');
   const token = useAppSelector((state) => state.user.token);
   const navigate = useNavigate();
@@ -23,7 +24,12 @@ export const Dashboard = () => {
         <Sidebar currentItem={sidebarItem} setCurrentItem={setSidebarItem} />
       </div>
       <div className="main-area">
-        <Link to="/auth">Authentication</Link>
+        <div className="topbar">
+          <Topbar currentItem={sidebarItem} />
+        </div>
+        <div className="content-area">
+          <p>{sidebarItem}</p>
+        </div>
       </div>
     </div>
   );
