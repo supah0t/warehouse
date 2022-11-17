@@ -4,7 +4,8 @@ export const Dashboard = () => {
   return (
     <div>
       Dashboard area
-      <Link to="/auth">Home</Link>
+      <br />
+      <Link to="/auth">Authentication</Link>
     </div>
   );
 };
