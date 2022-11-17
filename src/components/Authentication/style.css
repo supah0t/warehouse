@@ -1,6 +1,37 @@
 .auth-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
+}
+
+.image-area {
+  height: 100vh;
+}
+
+.login-image {
+  height: 100%;
+  width: 100%;
+}
+
+.form-area {
+  padding: 5em;
+  padding-top: 17vh;
+}
+
+.form-area * {
+  text-align: center;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2em;
+  color: blue;
+  font-weight: bold;
+}
+
+.submit-button {
+  width: 70%;
+}
+
+.error-text {
+  color: red;
 }
