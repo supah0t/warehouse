@@ -9,7 +9,7 @@ import './style.css';
 
 export const Dashboard = () => {
   //state variable would be used to conditionally
-  //render appropriate component in the content-area
+  //render the appropriate component in the content-area
   const [sidebarItem, setSidebarItem] = useState('');
   const token = useAppSelector((state) => state.user.token);
   const navigate = useNavigate();
